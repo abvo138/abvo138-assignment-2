@@ -12,10 +12,11 @@ install:
 	$(PIP) install -r requirements.txt  # Install dependencies
 	# Check for test files and run pytest only if they exist
 	if ls test_*.py *_test.py 2>/dev/null; then \
-		$(VENV)/bin/pytest -v; \
+		$(VENV)/bin/pytest -v || test $$? -eq 5; \
 	else \
 		echo "No test files found, skipping pytest."; \
 	fi
+
 
 # Run the Dash application
 .PHONY: run
