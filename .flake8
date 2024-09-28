@@ -15,5 +15,5 @@ max-line-length = 88
 # Enable specific errors or warnings to check
 extend-ignore = 
     E203,  # Whitespace before ':'
-    E501,  # Line length
+    E501,  # Line too long
     F401   # Imported but unused
