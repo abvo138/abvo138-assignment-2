@@ -3,4 +3,4 @@ plotly
 numpy
 pandas
 flake8
-pytest
+
