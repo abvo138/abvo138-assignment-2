@@ -12,8 +12,8 @@ exclude =
 # Maximum line length for the code
 max-line-length = 88
 
-# Enable specific errors or warnings to check
+# List of error or warning codes to ignore
 extend-ignore = 
-    E203,  # Whitespace before ':'
-    E501,  # Line too long
-    F401   # Imported but unused
+    E203,
+    E501,
+    F401
