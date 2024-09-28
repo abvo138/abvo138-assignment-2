@@ -1,0 +1,23 @@
+[flake8]
+# Exclude certain directories and files from linting
+exclude = 
+    .venv,
+    __pycache__,
+    .pytest_cache,
+    .git,
+    build,
+    dist,
+    # Add any additional patterns to ignore
+    **/__init__.py
+
+# Maximum line length for the code
+max-line-length = 88
+
+# Enable specific errors or warnings to check
+extend-ignore = 
+    E203,  # Whitespace before ':'
+    E501,  # Line length
+    F401,  # Imported but unused
+
+# Enable specific plugins if needed
+# plugin = flake8-docstrings
