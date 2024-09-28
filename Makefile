@@ -13,7 +13,7 @@ install:
 	# Check for test files and only run pytest if they exist
 	if ls test_*.py *_test.py 2>/dev/null | grep -q .; then \
 		echo "Test files found, running pytest..."; \
-		$(VENV)/bin/pytest -v || (echo "Pytest ran but encountered issues." && exit 0); \
+		$(VENV)/bin/pytest -v; \
 	else \
 		echo "No test files found, skipping pytest."; \
 	fi
