@@ -7,7 +7,6 @@ exclude =
     .git,
     build,
     dist,
-    # Add any additional patterns to ignore
     **/__init__.py
 
 # Maximum line length for the code
@@ -17,7 +16,4 @@ max-line-length = 88
 extend-ignore = 
     E203,  # Whitespace before ':'
     E501,  # Line length
-    F401,  # Imported but unused
-
-# Enable specific plugins if needed
-# plugin = flake8-docstrings
+    F401   # Imported but unused
