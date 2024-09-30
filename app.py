@@ -19,7 +19,8 @@ class KMeans:
                          color_continuous_scale='Viridis')
         if self.centers is not None:
             fig.add_scatter(x=self.centers[:, 0], y=self.centers[:, 1], mode='markers', 
-                            marker=dict(color='red', size=10), name='Centers')
+                            marker=dict(color='red', size=10), name='Centroids')
+        fig.update_layout(coloraxis_showscale=False)
         self.figures.append(fig)
 
     def initialize(self, manual_centers=None):
